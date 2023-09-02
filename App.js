@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack'
+import ExploreScreen from './ExploreScreen'; // Import your ExploreScreen component
+import AddUserScreen from './AddUserScreen'; // Import your AddUserScreen component
+import UserDetailsScreen from './UserDatailsScreen';
 
-export default function App() {
+const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+const ExploreStack = () => (
+  <Stack.Navigator>
+      <Stack.Screen name='ExploreScreen' component={ExploreScreen} />
+      <Stack.Screen name='UserDetails' component={UserDetailsScreen} />
+  </Stack.Navigator>
+)
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Explore" component={ExploreStack} />
+        <Tab.Screen name="Add User" component={AddUserScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
