@@ -2,13 +2,14 @@
 This app contains 3 screens first is the explore screen where user can see the users(i have picked up the user data and edited to show some data).second is the add user screen from bottom tab and third is the user details page. 
 
 
+
 ## Ideas to improve it further 
 
 Authentication: Implement user authentication to provide personalized experiences and ensure data security. You can use libraries like Firebase Authentication or implement your custom solution.
 
 User Profiles: Allow users to create and customize their profiles with profile pictures, bios, and additional information. Users can also edit their profiles after creation.
 
-User Verification: Consider implementing user verification methods like email verification or phone number verification to build trust in your community.
+User Verification: Consider implementing user verification methods like email or phone number verification to build trust in your community.
 
 User Discovery: Enhance the user discovery feature. Provide search and filtering options based on location, interests, and user types (individual, professional, merchant).
 
