@@ -48,7 +48,6 @@ const ExploreScreen = ({ navigation }) => {
 
   return (
     <View style={{ padding: 20 }}>
-      {/* Category selection buttons */}
       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 20 }}>
         <TouchableOpacity
           style={{ padding: 10, backgroundColor: selectedCategory === 'Individual' ? 'blue' : 'gray', borderRadius: 5 }}
@@ -69,7 +68,6 @@ const ExploreScreen = ({ navigation }) => {
           <Text style={{ color: 'white' }}>Merchant</Text>
         </TouchableOpacity>
       </View>
-      {/* Render users based on the selected category */}
       {renderSection(selectedCategory, usersData)}
     </View>
   );

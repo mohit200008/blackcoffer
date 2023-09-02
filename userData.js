@@ -1,4 +1,3 @@
-// usersData.js
 const usersData = [
     {
       id: 1,

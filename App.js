@@ -2,8 +2,8 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack'
-import ExploreScreen from './ExploreScreen'; // Import your ExploreScreen component
-import AddUserScreen from './AddUserScreen'; // Import your AddUserScreen component
+import ExploreScreen from './ExploreScreen'; 
+import AddUserScreen from './AddUserScreen'; 
 import UserDetailsScreen from './UserDatailsScreen';
 
 const Tab = createBottomTabNavigator();

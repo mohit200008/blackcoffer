@@ -13,6 +13,7 @@ const AddUserScreen = () => {
   const [mailId, setMailId] = useState('');
   const [imageUrl, setImageUrl] = useState(defaultImageUrl);
 
+
   const navigation = useNavigation();
 
   const addUser = () => {
@@ -29,7 +30,6 @@ const AddUserScreen = () => {
 
     usersData.push(newUser);
 
-    // Pass the updated usersData back to the Explore screen
     navigation.navigate('Explore', {
       updatedUsersData: usersData,
     });
