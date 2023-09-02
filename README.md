@@ -1,7 +1,10 @@
 # blackcoffer
 This app contains 3 screens first is the explore screen where user can see the users(i have picked up the user data and edited to show some data).second is the add user screen from bottom tab and third is the user details page. 
 
-
+## Installation
+* npm install 
+* expo start
+* run using emulator or physical device 
 
 ## Ideas to improve it further 
 
